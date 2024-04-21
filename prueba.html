@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+		<title>Inmobiliaria Bobadilla</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+	</head>
+<body>
+
+    <header id="header" class="alt">
+        <img class="logo" src="./images/logo.jpg" alt="logo">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html"><strong>Inicio</strong></a></li>
+                <li>
+                    <a href="#" class="icon solid fa-angle-down"><strong>Ver más</strong></a>
+                    <ul>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="empresa.html">La Empresa</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="button"><strong>Contactame</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="metas">
+        <img src="./images/banner-5.jpg" alt="imagen de metas">
+        <h1>Tasaciones</h1>
+        <div>
+            <h2>¿Queres vender una Propiedad?</h2>
+            <p>Confía en la experiencia de un profesional inmobiliario que te guiará en el proceso de venta o alquiler de tu hogar. Estamos aquí para ayudarte a lograr tus objetivos de forma eficiente y obtener el mejor precio posible. Miles de clientes satisfechos respaldan nuestra trayectoria. Vende tu propiedad más rápido y obtén el mejor precio con nuestro equipo especializado.</p>
+            <h2>Dejalo en nuestras manos</h2>
+              <div id="modal-backround" class="modal-backround">
+                <div id="modal-container" class="modal-container">
+                    <h2>Solicitud de Tasación</h2>
+                    <div id="progress-bar">
+                        <div id="progress"></div>
+                    </div>
+                    <!-- Formulario de solicitud de tasación - Primera parte -->
+                    <form class="form-tasacion" id="formulario" method="POST">
+
+                        <div id="part1">
+                            <h2>Ingresa tus datos:</h2>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br><br>
+
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required><br><br>
+
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required><br><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+                            <button type="button" id="btn-part1-next">Siguiente</button>
+                        </div>
+                    
+                        <div id="part2" style="display:none;">
+                            <h2>¿Qué desea realizar?</h2>
+                            <select name="accion" required>
+                              <option value="">Seleccionar</option>
+                              <option value="venta">Venta</option>
+                              <option value="compra">Compra</option>
+                              <option value="alquiler">Alquiler</option>
+                          </select><br><br>
+
+                            <button type="button" id="btn-part2-next">Siguiente</button>
+                        </div>
+                    
+                        <div id="part3" style="display:none;">
+                            <h2>¿En qué localidad o barrio se encuentra la propiedad?</h2>
+                            <input type="text" name="localidad" required><br><br>
+
+                            <button type="button" id="btn-part3-next">Siguiente</button>
+                        </div>
+                    
+                        <div id="part4" style="display:none;">
+                            <h2>¿Qué tipo de vivienda es?</h2>
+                            <select name="tipo" required>
+                                <option value="">Seleccionar tipo de vivienda</option>
+                                <option value="casa">Casa</option>
+                                <option value="departamento">Departamento</option>
+                                <option value="galpon">Galpón</option>
+                                <option value="ph">PH</option>
+                                <option value="local">Local</option>
+                                <option value="terreno">Terreno/Lote</option>
+                                <option value="industria">Industria</option>
+                                <option value="campo">Campo</option>
+                            </select><br><br>
+
+                            <button type="button" id="btn">Mostrar Datos</button>
+                        </div>
+                        <div id="part5" style='display: none;'>
+                            <h2>Muchas Gracias!</h2>
+                            <p>En brevedad </p>
+                        </div>
+                    </form>
+                    <button id="close"> Cerrar </button>
+                </div>
+            </div>
+            <button id="open">Quiero mi Tasacion</button>
+            </div>
+
+
+
+<script src="prueba.js"></script>
+</body>
+</html>

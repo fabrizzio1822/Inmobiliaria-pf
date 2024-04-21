@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+        <!-- HTML Meta Tags -->
+        <title>Inmobiliaria - Tasaciones</title>
+        <meta name="description" content="Nuestro equipo experto te ofrece evaluaciones precisas y claras para que tomes decisiones informadas sobre tus propiedades. Confía en nosotros para obtener el valor real de tus inversiones inmobiliarias.">
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://inmobiliariabobadilla.vercel.app/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Inmobiliaria - Tasaciones">
+        <meta property="og:description" content="Nuestro equipo experto te ofrece evaluaciones precisas y claras para que tomes decisiones informadas sobre tus propiedades. Confía en nosotros para obtener el valor real de tus inversiones inmobiliarias.">
+        <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/767c3c46-04ac-470a-8101-624846e03c51.jpg?token=f27pzaw1zj_kzxxWSWU-vQDYxe4MUJq2XxsPp9JzmlY&height=801&width=1200&expires=33249196539">
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="inmobiliariabobadilla.vercel.app">
+        <meta property="twitter:url" content="https://inmobiliariabobadilla.vercel.app/">
+        <meta name="twitter:title" content="Inmobiliaria - Tasaciones">
+        <meta name="twitter:description" content="
+        Nuestro equipo experto te ofrece evaluaciones precisas y claras para que tomes decisiones informadas sobre tus propiedades. Confía en nosotros para obtener el valor real de tus inversiones inmobiliarias.">
+        <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/767c3c46-04ac-470a-8101-624846e03c51.jpg?token=f27pzaw1zj_kzxxWSWU-vQDYxe4MUJq2XxsPp9JzmlY&height=801&width=1200&expires=33249196539">
+        <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+        <!-- Keywords-->
+        <meta name="keywords" content="Tasaciones inmobiliarias Neuquén, Valoraciones de propiedades Neuquén, Tasadores de propiedades Neuquén, Tasación de casas Neuquén, Tasación de departamentos Neuquén, Tasación de terrenos Neuquén, Tasación de locales comerciales Neuquén, Tasación online Neuquén, Precios de propiedades Neuquén, Evaluación de inmuebles Neuquén, Tasación de inmuebles Neuquén, Expertos en tasaciones Neuquén, Tasación precisa Neuquén, Cotización de propiedades Neuquén, Servicio de tasación Neuquén, Mejores tasadores Neuquén, Tasaciones inmobiliarias, Valoraciones de propiedades, Tasadores de propiedades, Tasación de casas, Tasación de departamentos, Tasación de terrenos, Tasación de locales comerciales, Tasación online, Precios de propiedades, Evaluación de inmuebles, Tasación de inmuebles, Expertos en tasaciones, Tasación precisa, Cotización de propiedades, Servicio de tasación, Mejores tasadores">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <script src="https://unpkg.com/akar-icons-fonts"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	</head>
+    <body>
+        <header id="header" class="alt">
+            <img class="logo" src="./images/logo.jpg" alt="logo">
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html"><strong>Inicio</strong></a></li>
+                    <li>
+                        <a href="#" class="icon solid fa-angle-down"><strong>Ver más</strong></a>
+                        <ul>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="empresa.html">La Empresa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html" class="button"><strong>Contactame</strong></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="metas">
+            <img src="./images/banner25.jpg" alt="imagen de metas">
+            <h1>Tasaciones</h1>
+            <div class="tasacion">
+                <h2>¿Queres vender una Propiedad?</h2>
+                <p>Confía en la experiencia de un profesional inmobiliario que te guiará en el proceso de venta o alquiler de tu hogar. Estamos aquí para ayudarte a lograr tus objetivos de forma eficiente y obtener el mejor precio posible. Miles de clientes satisfechos respaldan nuestra trayectoria. <br> Vende tu propiedad más rápido y obtén el mejor precio con nuestro equipo especializado.</p>
+                <h3>Tasaciones</h3>
+                <h3>Dejalo en nuestras manos</h3>
+                <hr>
+                <div id="modal-backround" class="modal-backround">
+                    <div id="modal-container" class="modal-container">
+                        <div class="modal-titulo">
+                            <h2>Solicitud de Tasación</h2>
+                            <button id="close">X</button>
+                        </div>
+                        <div id="progress-bar">
+                            <div id="progress"></div>
+                        </div>
+                        <!-- Formulario de solicitud de tasación - Primera parte -->
+                        <form action="https://formsubmit.co/inmobiliaria.lbobadilla@gmail.com" class="form-tasacion" id="formulario" method="POST">
+                            <div id="part1" class="part">
+                                <h3>Ingresa tus datos:</h3>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br><br>
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required><br><br>
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required><br><br>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Email" required><br><br> <!-- Cambiado el atributo 'name' -->
+                                <button type="button" id="btn-part1-next">Siguiente</button>
+                            </div>
+                            <div id="part2" class="part" style="display:none;">
+                                <h3>¿Qué desea realizar?</h3>
+                                <select name="accion" required>
+                                    <option id="seleccion" value="">Seleccionar</option>
+                                    <option value="venta">Venta</option>
+                                    <option value="compra">Compra</option>
+                                    <option value="alquiler">Alquiler</option>
+                                </select><br><br>
+                                <button type="button" id="btn-part2-next">Siguiente</button>
+                            </div>
+                            <div id="part3" class="part" style="display:none;">
+                                <h3 style="text-align: start;">Escribe tu respuesta:</h3>
+                                <input type="text" name="localidad" id="localidad" placeholder="Escribe la localidad o barrio" required><br><br>
+                                <button type="button" id="btn-part3-next">Siguiente</button>
+                            </div>
+                            <div id="part4" class="part" style="display:none;">
+                                <h3>¿Qué tipo de vivienda es?</h3>
+                                <select name="tipo" required>
+                                    <option value="">Seleccionar tipo de vivienda</option>
+                                    <option value="casa">Casa</option>
+                                    <option value="departamento">Departamento</option>
+                                    <option value="galpon">Galpón</option>
+                                    <option value="ph">PH</option>
+                                    <option value="local">Local</option>
+                                    <option value="terreno">Terreno/Lote</option>
+                                    <option value="industria">Industria</option>
+                                    <option value="campo">Campo</option>
+                                </select><br><br>
+                                <button type="submit" id="btn-part-4next">Siguiente</button>
+                                <button type="button" id="btn" style="display: none;">Siguiente</button>
+                            </div>
+                            <div id="part5" class="part parte-cinco" style='display: none;'>
+                                <div>
+                                    <h3>¡Muchas gracias!</h3>
+                                    <p>El mensaje ya fue enviado a la experta, en brevedad se estará comunicando con usted</p>
+                                </div>
+                                <img style="filter:grayscale(0); width: 80%; height: 40%;" src="./images/imagen-modal3.jpg" alt="">
+                            </div>
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/tasaciones.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="Inmobiliaria Bobadilla - Tasaciones">
+                        </form>
+                        
+                    </div>
+                </div>
+                <button id="open">Quiero mi Tasacion <i class="ai-home-alt1"></i></button>
+            </div>
+            <section class="tasacion-venta">
+                    <h2>¿Queres vender o alquilar una propiedad?</h2>        
+                    <h3>Podes hacerlo con nosotros de manera rapida y segura</h3>
+                    <p>La tasación de una propiedad es un proceso complejo que va más allá de simplemente considerar su año de construcción, tamaño y estado. También implica analizar la competencia en el mercado, los comparables disponibles y el contexto económico actual. Estos factores influyen en el precio final al establecer un equilibrio entre datos objetivos y el panorama general del mercado. Una tasación precisa requiere comprensión tanto de los detalles específicos de la propiedad como del entorno más amplio en el que se encuentra.</p>  
+                    <p class="tasacion-venta-especial">Y para darte la mejor Tasacion contamos con nuestra experta martillera Laura Bobadilla que se encargara de analizar y brindarte la mejor tasacion para tu vos!  </p>
+            </section> 
+        </main>
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-links-pagina">
+                    <ul>
+                        <li>Inicio</li>
+                        <li>Servicios</li>
+                        <li>Contacto</li>
+                        <li>La Empresa</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="icons">
+                        <i class="ai-linkedin-box-fill"><a class="no-underline" href="#"> Linkedin</a></i><br>
+                        <i class="ai-instagram-fill"><a class="no-underline" href="#"> Instagram</a></i><br>
+                        <i class="ai-facebook-fill"><a class="no-underline" href="#"> Facebook</a></i>
+                      </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 - Maria Laura Bobadilla. Todos los derechos reservados</p>
+            </div>
+        </footer>
+        <script src="validacion-tasacion.js"></script>
+        <script src="prueba.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
