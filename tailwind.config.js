@@ -7,10 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        secondary: "#9A0101",
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        banner: "url('/assets/house-banner.jpg')",
+      },
+      boxShadow: {
+        light: "0px 4px 30px rgba(0, 0, 0, 0.08)",
       },
     },
   },
